@@ -50,11 +50,7 @@ INSTALLED_APPS = [
     'cloudinary',
 ]
 
-# CLOUDINARY_STORAGE = {
-#     'CLOUD_NAME': '<your_cloud_name>',
-#     'API_KEY': '<your_api_key>',
-#     'API_SECRET': '<your_api_secret>',
-# }
+
 
 
 cloudinary.config( 
@@ -65,7 +61,7 @@ cloudinary.config(
 
 # Media settings
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
-MEDIA_URL = '/TestProject/media/'
+MEDIA_URL = '/MoodMusic/media/'
 MEDIA_ROOT = BASE_DIR / 'media'
 
 
@@ -158,6 +154,3 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-
-MEDIA_URL = '/MediaStore/'
-MEDIA_ROOT =  os.path.join(BASE_DIR,'MediaStore')
